@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style2.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="signup-section">
+            <header>Registrarse</header>
+
+            <div class="social-buttons">
+                <button><i class="bx bxl-google"></i>
+                Usar Google</button>
+                <button><i class="bx bxl-apple"></i>
+                Usar Apple</button>
+            </div>
+
+            <div class="separator">
+                <div class="line"></div>
+                <p>O</p>
+                <div class="line"></div>
+            </div>
+
+            <form  action="../php/insertar_usuario.php" method="POST">
+                
+                <select id="document-type" name="tipo_documento" required>
+                    <option value="" disabled selected>Tipo de Documento</option>
+                    <option value="CC">T.I</option>
+                    <option value="TI">C.C</option>
+                    <option value="CE">C.E</option>
+                </select>
+
+                <input type="number" name="N_documento" placeholder="Número de Documento" required>
+                <input type="text" name="usuario" placeholder="Usuario" required>
+                <input type="text" name="clave" placeholder="Contraseña" required>
+                <input type="text" name="primer_apellido" placeholder="Primer Apellido" required>
+                <input type="text" name="segundo_apellido" placeholder="Segundo Apellido" required>
+                <input type="text" name="nombres" placeholder="Nombres" required>
+                <input type="date" name="fecha_nacimiento" placeholder="fecha de nacimiento" required>
+                <input type="text" name="direccion" placeholder="direccion" required>
+                <input type="number" name="telefono" placeholder="telefono" required>
+                <input type="text" name="email" placeholder="correo electronico" required>
+                 <a href="#">¿Olvidaste tu contraseña?</a>
+                 <button type="submit" class="btn">Signup</button>
+            </form>
+        </div>
+
+        <div class="login-section">
+            <header>Iniciar Sesión</header>
+
+            <div class="social-buttons">
+                <button><i class="bx bxl-google"></i>
+                Usar Google</button>
+                <button><i class="bx bxl-apple"></i>
+                Usar Apple</button>
+            </div>
+
+            <div class="separator">
+                <div class="line"></div>
+                <p>O</p>
+                <div class="line"></div>
+            </div>
+
+            <form action="../php/ingresar.php" method="post">
+                <input type="text" name="usuario" placeholder="usuario" required>
+                <input type="password" name="clave" placeholder="Contraseña" required>
+                 <a href="#">¿Olvidate tu contraseña?</a>
+                 <button type="submit" class="btn">Login</button>
+            </form>
+
+        </div>
+
+    </div>
+    
+    <script src="../js/script2.js"></script>
+</body>
+</html>

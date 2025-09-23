@@ -1,0 +1,99 @@
+/* cart.css - estilos para el carrito (drawer/modal) */
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: -420px; /* fuera de la vista por defecto */
+  width: 380px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -12px 0 24px rgba(0,0,0,0.2);
+  z-index: 2000;
+  transition: right 0.28s ease;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cart-drawer.open {
+  right: 0;
+}
+
+.cart-drawer .cart-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.cart-drawer .cart-header h3 { font-size: 1.6rem; color: #333; }
+.cart-drawer .cart-header .close-cart {
+  font-size: 1.6rem;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.cart-item {
+  display:flex;
+  gap: 10px;
+  align-items:center;
+  border: 1px solid #f0f0f0;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.cart-item img { width: 60px; height: 60px; object-fit: cover; border-radius: 6px; }
+.cart-item .info { flex: 1; }
+.cart-item .info h4 { font-size: 1.4rem; margin-bottom: 4px; }
+.cart-item .info span { font-size: 1.3rem; color: #e84393; font-weight:700; }
+.cart-item .qty {
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.qty button {
+  width:26px; height:26px; border-radius:6px; cursor:pointer;
+  background:#f3f3f3; font-weight:bold;
+}
+
+/* summary */
+.cart-summary {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  display:flex;
+  flex-direction: column;
+  gap:8px;
+}
+
+.cart-summary .total {
+  display:flex;
+  justify-content:space-between;
+  font-size:1.6rem;
+  font-weight:700;
+}
+
+.checkout-actions { display:flex; gap:8px; margin-top:6px; }
+.checkout-actions .btn {
+  flex:1; padding:8px 12px; border-radius:6px; cursor:pointer;
+}
+.checkout-actions .btn.primary { background:#e84393; color:#fff; border:none; }
+.checkout-actions .btn.secondary { background:#f3f3f3; color:#333; border:none; }
+
+/* responsive small */
+@media (max-width:480px) {
+  .cart-drawer { width: 100%; right: -100%; }
+  .cart-drawer.open { right: 0; }
+}

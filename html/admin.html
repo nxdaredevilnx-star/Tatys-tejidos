@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Panel - Clientes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style3.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">Mi Empresa</div>
+      <nav class="menu">
+        <a href="#"><i class="fa fa-user-tie"></i> Empleados</a>
+        <a href="#"><i class="fa fa-box"></i> Productos</a>
+        <a href="./clientes.html" class="active"><i class="fa fa-users"></i> Clientes</a>
+        <a href="#"><i class="fa fa-truck"></i> Proveedores</a>
+        <a href="#"><i class="fa fa-file-invoice-dollar"></i> Facturas</a>    
+        <a href="#"><i class="fa fa-cog"></i> Configuración</a>    
+        <a href="#"><i class="fa fa-question-circle"></i> Ayuda</a>
+        <a href="#"><i class="fa fa-sign-out-alt"></i> Salir</a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="topbar">
+        <div class="search"><input id="qSearch" placeholder="Buscar clientes..." /></div>
+        <div style="display:flex; gap:8px;">
+          <button class="btn" id="btnAdd">Agregar Cliente</button>
+        </div>
+      </div>
+
+      <div class="cards" id="cardsContainer">
+        <!-- Contenido dinámico desde JS -->
+      </div>
+
+      <div class="layout">
+        <div class="panel large">
+          <h3>Listado de Clientes</h3>
+          <div style="margin-top:12px;">
+            <table id="tableList">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Email</th>
+                  <th>Teléfono</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Se llena con JS + PHP -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel small">
+          <h4>Últimos Clientes Registrados</h4>
+          <div id="newClientsList" style="margin-top:12px;">
+            <p style="color:#777;">Cliente A</p>
+            <p style="color:#777;">Cliente B</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Enlace correcto al JS -->
+  <script src="../js/script3.js"></script>
+</body>
+</html>

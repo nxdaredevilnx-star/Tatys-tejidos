@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <script defer src="./js/cart.js"></script>
+</head>
+<body>
+<!--inicio de sección del header-->
+<header>
+  <!-- Logo -->
+  <a href="index.html" class="logo">
+    <img src="./img/idea-logo.png" alt="Logo Tatys tejidos" class="logo-img">
+  </a>
+
+  <!-- Menú -->
+  <nav class="navbar">
+    <a href="#home">Inicio</a>
+    <a href="#about">Nosotros</a>
+    <a href="#products">Productos</a>
+    <a href="#review">Reseñas</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+
+  <!-- Iconos -->
+    <div class="icons">
+        <a href="./html/clientesadmin.html" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="./html/registrase.html" class="fas fa-user"></a>
+    </div>
+
+</header>
+<!--fin de sección del header-->
+
+<!--inicio de sección del home-->
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Tatys Tejidos</h3>
+        <span>Productos hechos a mano</span>
+        <p>Caricias y regalos que enamoran con las persona correcta!
+            No lo pienses tanto y ten el regalo perfecto en tus manos
+        </p>
+        <a href="#products" class="btn">Mostrar más</a>
+    </div>
+</section>
+<!--fin de sección del home-->
+
+<!--inicio de sección de about-->
+<section class="about" id="about">
+    <h1 class="heading"><span>Nosotr</span>os</h1>
+    <div class="row">
+        <div class="video-container">
+            <video src="./img/invideo-ai-1080 ¡Tejer nunca fue tan fácil y divertido! 2025-09-14.mp4" loop autoplay muted></video>
+            <h3>los mejores productos</h3>
+        </div>
+        <div class="content">
+            <h3>¿Por qué escogernos?</h3>
+            <p>Cada creación refleja dedicación y detalle, ofreciendo piezas exclusivas 
+            que no se repiten. Al elegirnos, apoyas el arte auténtico y llevas contigo un 
+            trabajo hecho a mano con valor especial.</p>
+            <a href="#review" class="btn">Opiniones</a>
+        </div>
+    </div>
+</section>
+<!--fin de sección de about-->
+
+<!--inicio de sección de icons-->
+<section class="icons-container">
+    <div class="icons">
+         <i class="fas fa-tags"></i>
+        <div class="info">
+            <h3>Costo de Envío</h3>
+            <span>varía según donde lo pidas</span>
+        </div>
+    </div>
+    <div class="icons">
+        <i class="fas fa-thumbs-up"></i>
+        <div class="info">
+            <h3>Garantías</h3>
+            <span>Del producto, con factura</span>
+        </div>
+    </div>
+    <div class="icons">
+        <i class="fas fa-gift"></i>
+        <div class="info">
+            <h3>Ofertas</h3>
+            <span>para clientes frecuentes</span>
+        </div>
+    </div>
+    <div class="icons">
+        <i class="fas fa-credit-card"></i>
+        <div class="info">
+            <h3>Pagos seguros</h3>
+            <span>Protegido por PayPal</span>
+        </div>
+    </div>
+</section>
+<!--fin de sección de icons-->
+   
+<!--inicio de sección de products-->
+<section class="products" id="products">
+    <h1 class="heading">Productos <span>Destacados</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="./img/accesorio.jpg" alt="">
+                <div class="icons">
+                    <a href="./html/similares.html" class="fas fa-heart" title="Ver similares"></a>
+                    <button class="cart-btn" data-name="Bolso Tejido" data-price="54.000" data-img="./img/accesorio.jpg">
+                        Agregar al Carrito
+                    </button>
+                    <a href="./html/checkout.html" class="fas fa-share" title="Pagar"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Bolso Tejido</h3>
+                <div class="price">$54.000 <span>$60.000</span></div>
+            </div>
+        </div>
+
+
+        <div class="box">
+    <span class="discount">-15%</span>
+    <div class="image">
+        <img src="./img/decoracion-1.jpg" alt="">
+        <div class="icons">
+            <a href="./html/similares.html" class="fas fa-heart" title="Ver similares"></a>
+            <button class="cart-btn" data-name="Trío de Flores" data-price="63.300" data-img="./img/decoracion-1.jpg">
+                Agregar al Carrito
+            </button>
+            <a href="./html/checkout.html" class="fas fa-share" title="Pagar"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Trío de Flores</h3>
+        <div class="price">$63.300 <span>$78.000</span></div>
+    </div>
+</div>
+
+<div class="box">
+    <span class="discount">-5%</span>
+    <div class="image">
+        <img src="./img/flores-3.jpg" alt="">
+        <div class="icons">
+            <a href="./html/similares.html" class="fas fa-heart" title="Ver similares"></a>
+            <button class="cart-btn" data-name="Accesorio Tradicional" data-price="24.700" data-img="./img/flores-3.jpg">
+                Agregar al Carrito
+            </button>
+            <a href="./html/checkout.html" class="fas fa-share" title="Pagar"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Accesorio Tradicional</h3>
+        <div class="price">$24.700 <span>$26.000</span></div>
+    </div>
+</div>
+
+<div class="box">
+    <span class="discount">-20%</span>
+    <div class="image">
+        <img src="./img/llavero-1.jpg" alt="">
+        <div class="icons">
+            <a href="./html/similares.html" class="fas fa-heart"></a>
+            <button class="cart-btn" data-name="Llavero" data-price="12.000" data-img="./img/llavero-1.jpg">
+                Agregar al Carrito
+            </button>
+            <a href="./html/checkout.html" class="fas fa-share" title="Pagar"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Llavero</h3>
+        <div class="price">$12.000 <span>$15.000</span></div>
+    </div>
+</div>
+
+<div class="box">
+    <span class="discount">-17%</span>
+    <div class="image">
+        <img src="./img/muñeca-2.jpg" alt="">
+        <div class="icons">
+            <a href="./html/similares.html" class="fas fa-heart"></a>
+            <button class="cart-btn" data-name="Amigurumi" data-price="66.400" data-img="./img/muñeca-2.jpg">
+                Agregar al Carrito
+            </button>
+            <a href="./html/checkout.html" class="fas fa-share" title="Pagar"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Amigurumi</h3>
+        <div class="price">$66.400 <span>$80.000</span></div>
+    </div>
+</div>
+
+<div class="box">
+    <span class="discount">-3%</span>
+    <div class="image">
+        <img src="./img/pato-4.jpg" alt="">
+        <div class="icons">
+            <a href="./html/similares.html" class="fas fa-heart"></a>
+            <button class="cart-btn" data-name="Amigurumi" data-price="46.560" data-img="./img/pato-4.jpg">
+               Agregar al Carrito
+            </button>
+            <a href="./html/checkout.html" class="fas fa-share" title="Pagar"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Amigurumi</h3>
+        <div class="price">$46.560 <span>$48.000</span></div>
+    </div>
+</div>
+
+<div class="box">
+    <span class="discount">-18%</span>
+    <div class="image">
+        <img src="./img/llavero-4.jpg" alt="">
+        <div class="icons">
+            <a href="./html/similares.html" class="fas fa-heart"></a>
+            <button class="cart-btn" data-name="Llavero" data-price="16.400" data-img="./img/llavero-4.jpg">
+                Agregar al Carrito
+            </button>
+            <a href="./html/checkout.html" class="fas fa-share" title="Pagar"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Llavero</h3>
+        <div class="price">$16.400 <span>$20.000</span></div>
+    </div>
+
+<div class="box">
+    <span class="discount">-10%</span>
+    <div class="image">
+        <img src="./img/decoracion.jpg" alt="">
+        <div class="icons">
+            <a href="./html/similares.html" class="fas fa-heart"></a>
+            <button class="cart-btn" data-name="Decoracion" data-price="46.800" data-img="./img/decoracion.jpg">
+                Agregar al Carrito
+            </button>
+            <a href="./html/checkout.html" class="fas fa-share" title="Pagar"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Ramo de Flores</h3>
+        <div class="price">$46.800 <span>$52.000</span></div>
+    </div>
+</div>
+
+<div class="box">
+    <span class="discount">-7%</span>
+    <div class="image">
+        <img src="./img/llavero-2.jpg" alt="">
+        <div class="icons">
+            <a href="./html/similares.html" class="fas fa-heart"></a>
+            <button class="cart-btn" data-name="Llavero" data-price="$16.740" data-img="./img/llavero-2.jpg">
+                Agregar al Carrito
+            </button>
+            <a href="./html/checkout.html" class="fas fa-share" title="Pagar"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Llavero</h3>
+        <div class="price">$16.740 <span>$18.000</span></div>
+    </div>
+</div>
+
+    </div>
+</section>
+<!--fin de sección de products-->
+<section class="review" id="review">
+    <h1 class="heading">Reseñas de <span>Clientes</span></h1>
+    <div class="box-conta">
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Recibí el ramo de flores de crochet y quedé maravillada. No solo son lindísimas, sino que además duran para siempre, así que es un detalle único. Me lo entregaron muy bien empacado y con un acabado impecable. ¡Felicitaciones por tan lindo trabajo!</p>
+            <div class="user">
+                <img src="./img/llavero-3.jpg" alt="">
+                <div class="user-info">
+                    <h3>Maria Paz</h3>
+                    <span>Cliente Satisfecho</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>"¡Me encantó! El muñeco de crochet que pedí superó mis expectativas. Está muy bien tejido, los detalles son preciosos y se nota el amor con el que fue hecho. Se convirtió en el regalo perfecto para mi sobrino, ¡quedó fascinado! 100% recomendado."</p>
+            <div class="user">
+                <img src="./img/muñeco-1.jpg" alt="">
+                <div class="user-info">
+                    <h3>John Deo</h3>
+                    <span>Cliente Satisfecho</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>"Pedí un llavero de crochet como recuerdo y estoy feliz con la compra. Es resistente, colorido y tiene un diseño súper original. ¡Todos me preguntan dónde lo conseguí! Felicitaciones al equipo, de verdad hacen piezas hermosas."</p>
+            <div class="user">
+                <img src="./img/muñeco-13.jpg" alt="">
+                <div class="user-info">
+                    <h3>Ramón Pinzón</h3>
+                    <span>Cliente Satisfecho</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h1 class="heading"><span>Contacta</span>nos</h1>
+    <div class="row">
+        <form action="">
+            <input type="text" placeholder="nombre" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="telefono" class="box">
+            <textarea name="submit" class="box" placeholder="mensaje" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar Mensaje" class="btn">
+        </form>
+
+        <div class="image">
+            <img src="./img/muñeco-9.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Enlaces rápidos</h3>
+            <a href="#home">Inicio</a>
+            <a href="#about">Nosotros</a>
+            <a href="#products">Productos</a>
+            <a href="#review">Reseñas</a>
+            <a href="#contact">Contacto</a>
+        </div>
+
+        <div class="box">
+            <h3>Enlaces adicionales</h3>
+            <a href="#">Mi cuenta</a>
+            <a href="#">Mi pedido</a>
+        </div>
+
+        <div class="box">
+            <h3>Ubicaciones</h3>
+            <a href="#">Bogotá</a>
+            <a href="#">Usaquen</a>
+            <a href="#">Lombardía</a>
+            <a href="#">Calle 100</a>
+        </div>
+          <div class="box">
+            <h3>Información de contacto</h3>
+            <a href="#">+123-456-7890</a>
+
+            <a href="#">example@gmail.com</a>
+            <a href="#">Bogotá, Colombia - 400104</a>
+            <img src="#" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> Creada por <span> Paula Reina</span> | Todos los derechos son reservados</div>
+
+</section>
+
+
+</body>
+</html>

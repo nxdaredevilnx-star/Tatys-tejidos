@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="../css/checkout.css">
+  <script defer src="../js/checkout.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <a href="../index.html" class="btn-volver">Seguir comprando</a>
+  </header>
+
+  <main>
+    <section class="resumen">
+      <h2>Resumen de tu compra</h2>
+      <table id="tabla-carrito">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="total">
+        <p>Total: <span id="total">$0.00</span></p>
+      </div>
+      <button id="btn-confirmar">Confirmar pedido</button>
+    </section>
+  </main>
+</body>
+</html>

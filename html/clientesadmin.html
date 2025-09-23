@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes - TatysTejidos</title>
+    <link rel="stylesheet" href="../css/clientes_admin.css">
+</head>
+<body>
+
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <h1>Tatys Tejidos</h1>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../html/productosadmin.html">Productos</a></li>
+            <li><a href="../html/ventas_admin.html">Ventas</a></li>
+            <li><a href="../html/clientesadmin.html">Clientes</a></li>
+            <li><a href="../html/reportes2.html">Reportes</a></li>
+            <li><a href="../html/confi.html">Configuración</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <h2 class="header">Gestión de Clientes</h2>
+        <p>Aquí puedes ver, añadir y editar los clientes de la tienda.</p>
+
+    
+        <!-- Formulario para buscar producto -->
+        <div id="product-form">
+            <h3>Ver Clientes</h3>
+            <form action="../php/buscar_clientes_admin.php" method="post">
+
+                <label for="nombre_buscar">Nombre del Cliente:</label>
+                <input type="text" name="nombres" placeholder="Nombre del cliente">
+
+               <label for="nombre_buscar">Número de docuemnto:</label>
+                <input type="text" name="N_documento" placeholder="Numero de documento">
+
+                <br><br>
+                <input type="submit" class="btn" value="Buscar">
+            </form>
+        </div>
+
+
+        <!-- Formulario para borrar producto -->
+        <div id="product-form">
+            <h3>Borrar cliente</h3>
+            <form action="../php/borrar_clientes.php" method="post">
+                 <input type="text" name="N_documento" placeholder="numero de documento del cliente"><br>
+                <br>
+                <input type="submit" class="btn" value="Buscar y borrar">
+            </form>
+    
+        </div>
+
+        <!-- Formulario para borrar producto -->
+        <div id="product-form">
+            <h3>Actualizar cliente</h3>
+            <form action="../php/actualizar.php" method="post">
+                Ingrese el email del cliente:
+                <input type="text" name="email"><br>
+                <br>
+                <input type="submit" class="btn" value="Buscar y borrar">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - TatysTejidos</title>
+    <link rel="stylesheet" href="../css/productosadmin.css">
+</head>
+<body>
+
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <h1>Tatys Tejidos</h1>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../html/productosadmin.html">Productos</a></li>
+            <li><a href="../html/ventas_admin.html">Ventas</a></li>
+            <li><a href="../html/clientesadmin.html">Clientes</a></li>
+            <li><a href="../html/reportes2.html">Reportes</a></li>
+            <li><a href="../html/confi.html">Configuración</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <h2 class="header">Gestión de Productos</h2>
+        <p>Aquí puedes ver, añadir y editar los productos de la tienda.</p>
+
+        <!-- Formulario para agregar producto -->
+        <div id="product-form">
+            <h3>Agregar Producto</h3>
+
+            <!-- IMPORTANTE: enctype para subir archivos -->
+            <form action="../php/productosadmin.php" method="post" enctype="multipart/form-data">
+
+                <label for="categoria">Categoría del producto:</label>
+                <select class="controls" name="id_categoria" required>
+                    <option value="">Seleccione</option>
+                    <option value="1">Llaveros</option>
+                    <option value="2">Ropa</option>
+                    <option value="3 para la venta">Accesorios</option>
+                    <option value="4">Decoración de temporada</option>
+                    <option value="5">Amigurumis</option>
+                </select>
+                <br><br>
+
+                <label for="categoria">Proveedor del producto:</label>
+                <select class="controls" name="id_proveedor" required>
+                    <option value="">Seleccione</option>
+                    <option value="1">kingcason - Lana</option>
+                    <option value="2">Leader - Hilos y Agujas</option>
+                    <option value="3">Promoespuma - espuma</option>
+                </select>
+                <br><br>
+
+                <label for="description">Descripción:</label>
+                <input type="text" name="descripcion" placeholder="Descripción" required>
+
+                <label for="stock">Stock del producto:</label>
+                <input type="text" name="stock" placeholder="Stock del producto" required>
+
+                <label for="price">Precio:</label>
+                <input type="text" name="precio" placeholder="Precio" required>
+
+
+                <label for="foto">Foto del producto:</label>
+                <input type="text" name="photo_producto" accept="image/*" required>
+
+                <br><br>
+                <input type="submit" class="btn" value="Registrar">
+            </form>
+        </div>
+
+        <!-- Formulario para buscar producto -->
+        <div id="product-form">
+            <h3>Ver Producto</h3>
+            <form action="../php/buscar_pro_admin.php" method="get">
+
+                <label for="nombre_buscar">Descripcion del Producto:</label>
+                <input type="text" name="descripcion" placeholder="Nombre del producto">
+
+                 <label for="categoria">Categoría del producto:</label>
+                <select class="controls" name="id_categoria" required>
+                    <option value="">Seleccione</option>
+                    <option value="1">Llaveros</option>
+                    <option value="2">Ropa</option>
+                    <option value="3 para la venta">Accesorios</option>
+                    <option value="4">Decoración de temporada</option>
+                    <option value="5">Amigurumis</option>
+                </select>
+
+                <br><br>
+                <input type="submit" class="btn" value="Buscar">
+            </form>
+        </div>
+
+        <!-- Formulario para borrar producto -->
+        <div id="product-form">
+            <h3>Borrar Producto</h3>
+            <form action="../php/borrar.php" method="post">
+                 <input type="text" name="descripcion" placeholder="descripcion del  producto"><br>
+                <br>
+                <input type="submit" class="btn" value="Buscar y borrar">
+            </form>
+    
+        </div>
+
+
+                <!-- Formulario para actualizar producto -->
+        <div id="product-form">
+            <h3>Actualizar cliente</h3>
+            <form action="../php/actualizar_pro.php" method="post">
+                Ingrese el precio del producto:
+                <input type="text" name="precio"><br>
+                <br>
+                <input type="submit" class="btn" value="Buscar y borrar">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
